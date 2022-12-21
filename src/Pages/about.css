@@ -1,0 +1,25 @@
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.about h2{
+    color: #606CFC;
+  margin: 0.5rem 0;
+  font-weight: lighter;
+  font-size: 2rem;
+}
+.about h2 span{
+    color:rgb(168, 168, 168);
+}
+.about p{
+    text-align: justify;
+    margin: 1.5rem 0;
+    color: #555;
+}
+.about h3{
+    margin: 2rem;
+    color: #606CFC;
+}

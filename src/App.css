@@ -1,0 +1,294 @@
+.login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/cglass.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.login .card{
+    width: 800px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.login .card .left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.login .card .left img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.login .card .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    
+}
+.login .card .right h4{
+    color: #5597e7;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+.login .card .right div{
+    margin: 0.4rem 0;
+}
+.login .card .right .input{
+    margin-top: 0.5rem;
+}
+.login label{
+    color: rgb(172, 172, 172);
+}
+.login .login-btn{
+    width: 100%;
+    background-color: #5597e7;
+    color: #fff;
+    font-weight: bolder;
+    padding: 0.5rem;
+    border-radius: 3px;
+    border: none;
+}
+.login .link{
+    text-decoration: none;
+    color: #5597e7;
+    margin-top: 1rem;
+}
+
+@media(max-width:700px){
+    .login .card{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+    .login .card  .left{
+        width: 100%;
+    }
+    .login .card .right{
+        width: 100%;
+        padding-left: 1rem;
+    }
+}
+
+
+/* /////components */
+
+.card-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/cglass.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-section .card-box{
+    width: 1200px;
+    height: 600px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.card-section .card-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+   
+}
+.card-section .card-box h4{
+    color: #5597e7;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    height: 100%;
+}
+.card-section .card-top input{
+    padding: 0.2rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid silver;
+    color: #5597e7;
+}
+hr{
+   border:1px solid #5597e7;
+   width: 50%;
+}
+.card-section .card-box::-webkit-scrollbar{
+    display: none;
+}
+.card-section .card-box .card-wrap{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.basic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.basic .left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.basic .right{
+    width: 50%;
+    display: flex;
+   
+    flex-direction: column;
+}
+.basic .right .bar{
+    margin-top: 1rem;
+    color: #5597e7;
+}
+.basic .right .bar h6{
+    font-size: 0.8rem;
+}
+.tab-content{
+    overflow: auto;
+}
+.tab-content h5{
+    font-size: 0.9rem;
+}
+.tab-content h5 span{
+    color: #5597e7;
+}
+.update-profile .form div .input{
+    margin: 0.5rem 0;
+}
+.update-btn{
+    background-color: #5597e7;
+    color: #fff;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+.tab-content::-webkit-scrollbar{
+    display: none;
+}
+@media(max-width:700px){
+    .card-section{
+        padding: 1rem;
+    }
+    .card-section .card-box{
+        width: 100%;
+        
+        height: 100%;
+    }
+    .card-section .card-top{
+        flex-direction: column;
+        justify-content: left;
+        width: 100%;
+        display: block;
+    }
+    .card-section  hr{
+        display: none;
+    }
+    .card-section .card-box h4{
+        height: auto;
+        text-align: left;
+        
+    }
+.dot{
+    display: none;
+}
+    .card-section .card-box input{
+        margin-top: 1rem;
+        border-bottom: 1px solid whitesmoke;
+        padding: 0.5rem;
+        width: 100%;
+        display: none;
+      
+    }
+    .basic{
+        height: 100%;
+        overflow: auto;
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+    .basic .left{
+        width: 100%;
+    }
+    .basic .right{
+        width: 100%;
+    }
+    .basic::-webkit-scrollbar{
+        display: none;
+    }
+    .tab-content::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+.delete-btn{
+    background-color: red;
+    color: #fff;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.media-section{
+    width: 100%;
+    height: 100%;
+    
+}
+.media-section .media-box{
+    width: 100%;
+    height: 100%;
+}
+.media-box h4{
+    font-size: 1.2rem;
+}
+.media-section .media-box .media-wrap{
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    overflow: auto;
+}
+.media-section .media-box .media-wrap::-webkit-scrollbar{
+    display: none;
+}
+.upload-btn{
+    cursor: pointer;
+}
+.upload-btn:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+@media(max-width:700px){
+    .delete-btn{
+        margin-left: 0;
+    }
+}

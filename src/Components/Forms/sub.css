@@ -1,0 +1,193 @@
+.container2{
+   width: 100%;
+   background-image: url(../../assets/cglass.png);
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   padding: 1rem;
+   align-items: center;
+   flex-direction: column;
+}
+.container2 .head {
+    margin: 2rem 0;
+}
+.container2 .head h3{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+
+}
+
+.container2 .form{
+    width: 100%;
+   padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+   
+
+    
+}
+.container2 .form .left,.container2 .form .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+ 
+    margin: 0;
+}
+.container2 .form .left label,.container2 .form .right label{
+    font-weight: 400;
+    color: rgb(158, 158, 158);
+    text-transform: uppercase;
+}
+.container2 .form .left input,.container2 .form .right input{
+    width: 100%;
+    padding: 0.4rem;
+    outline: none;
+    border: 1px solid whitesmoke;
+    margin-top: 1rem;
+}
+.container2 .form .right{
+    width: 50%;
+}
+ button{
+   border: none;
+   outline: none;
+  
+   
+    padding: 0.8rem 1rem;
+   color: #fff;
+    float: left;
+    border-radius: 2px;
+
+ 
+}
+
+@media(max-width:700px){
+    .form{
+        flex-direction: column;
+    }
+    .container2 .form .left{
+        width: 100%;
+    }
+    .container2  .form .right{
+        width: 100%;
+    }
+    button{
+        width: 80%;
+        
+    }
+}
+.box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    background-image: url(../../assets/cglass.png);
+    background-position: center;
+    background-size: cover;
+}
+.box .box2{
+    width: 1000px;
+    height: 600px;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.box .box2 h4{
+    color: rgb(0, 140, 255);
+   
+    font-size: 1.2rem;
+}
+.box .box2 .row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.box .box2 .row .col{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin: 0 1.5rem;
+}
+.box .box2 .row .col label{
+    margin-bottom: 0.5rem;
+}
+.box button{
+   margin-top: 0.5rem 1rem;
+   background-color: #5597e7;
+    padding: 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+@media(max-width:750px){
+    .box{
+        height: auto;
+        padding-bottom: 2rem;
+    }
+    .box .box2{
+        width: 100%;
+        padding: 1rem;
+        box-shadow: none;
+    
+    }
+    .box .box2 .row{
+        margin: 1rem 0;
+    }
+    .box .box2 .row .col{
+        margin: 0.5rem 0;
+    }
+    .box .box2 h4{
+        text-align: center;
+    }
+    button{
+        margin-bottom: 1rem;
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+ 
+}
+
+.upload{
+    padding-right: 1rem;
+    padding-left: 0;
+}
+
+.upload .form{
+    width: 100%;
+}
+
+.upload .form .drag{
+    background-color: whitesmoke;
+   margin-top: 0.5rem;
+    height: 100px;
+    margin-right: 1rem;
+    width: 100%;
+}
+.upload .form .drag input::-webkit-file-upload-button{
+    background: transparent;
+    display: none;
+}
+.upload .form div{
+    margin: 1rem 0;
+}
+.upload .form div .input{
+    margin-top: 0.5rem;
+}
+.upload .upload-btn{
+    padding: 0.5rem;
+    background-color: #5597e7;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 1rem;
+}
+
+
+
+
+
+

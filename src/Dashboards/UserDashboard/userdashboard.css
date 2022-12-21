@@ -1,0 +1,128 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .left{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid red; */
+    overflow: auto;
+}
+.container .left::-webkit-scrollbar{
+    display: none;
+}
+.container .right{
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+}
+.container .right::-webkit-scrollbar{
+    display: none;
+}
+
+@media(max-width:700px){
+    .container .left{
+        display: none;
+    }
+    .container .right{
+        width: 100%;
+    }
+}
+.right-container{
+    display: flex;
+    flex-direction: column;
+   
+    overflow: auto;
+    padding: 1rem;
+padding-bottom: 0;
+    width: 100%;
+
+}
+.right-container::-webkit-scrollbar{
+    display: none;
+}
+.profile{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../assets/cglass.png);
+    background-position: center;
+    background-size: cover;
+   
+
+}
+
+.profile .pbox{
+    width: 1000px;
+    height: 500px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: rgba(255, 255, 255, 0.493);
+    overflow: auto;
+    padding: 1rem;
+}
+.profile .pbox h4{
+    color:  #5597e7;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.profile .pimg{
+    margin: 1rem;
+}
+.profile h5{
+    color: rgb(88, 88, 88);
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+.profile h5 span{
+    color: #5597e7;
+}
+.profile h6{
+    color: silver;
+    margin: 1rem;
+    margin-top: 0;
+}
+.profile .data{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    margin: 0.5rem 0;
+}
+.profile .data .left{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.profile .data .right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+@media(max-width:700px){
+    .profile{
+        padding: 1rem;
+    }
+    .profile .pbox{
+        width: 100%;
+    }
+    .profile .data{
+        flex-direction: column;
+        font-size: 0.8rem;
+    }
+    .profile .data .left{
+        width:100%;
+        margin-bottom: 0.8rem;
+    }
+    .profile .data .right {
+        width: 100%;
+    }
+}
