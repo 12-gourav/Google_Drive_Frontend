@@ -1,0 +1,1 @@
+import{u as t,j as a,F as n,a as u}from"./index.6c9b87f9.js";import{L as c}from"./LoadingToRedirect.574197dd.js";const g=({children:o})=>{const{user:e}=t(r=>r.user);console.log(e,"user");const s=localStorage.getItem("token");return a(n,{children:[" ",e&&e.role==="subuser"&&s?o:u(c,{})]})};export{g as default};
