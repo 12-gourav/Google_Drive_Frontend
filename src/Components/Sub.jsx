@@ -10,11 +10,11 @@ const Sub = () => {
   const maxlimits = byteSize(user?.maxlimit);
   const existlimit = user?.existlimit;
 
-  // console.log(exl, "ex");
+  console.log(existlimit, "ex");
 
   const percent = Math.round((existlimit / maxlimits?.value) * 100);
-  // console.log(maxlimits?.value, "max");
-  // console.log(percent, "percent");
+  console.log(maxlimits?.value, "max");
+  console.log(percent, "percent");
 
   return (
     <>

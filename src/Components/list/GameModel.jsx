@@ -4,6 +4,7 @@ import { Progress, Space } from "antd";
 import { Tabs } from "antd";
 import UpdateSubUserProfile from "../Forms/UpdateSubUserProfile";
 import { useSelector } from "react-redux";
+import byteSize from "byte-size";
 
 import img from "../../assets/a.png";
 import SubMedia from "../SubMedia";
@@ -14,6 +15,16 @@ const onChange = (key) => {
 const GameModel = ({ isModalOpen, handleOk, handleCancel, s }) => {
   const { sub } = useSelector((state) => state.user);
   const [loading, setLoading] = useState(false);
+  console.log(s);
+
+  const maxlimits = byteSize(s?.maxlimit);
+  const existlimit = s?.existlimit;
+
+  console.log(existlimit, "ex");
+
+  const percent = Math.round((existlimit / maxlimits?.value) * 100);
+  console.log(maxlimits?.value, "max");
+  console.log(percent, "percent");
 
   return (
     <>
@@ -75,26 +86,14 @@ const GameModel = ({ isModalOpen, handleOk, handleCancel, s }) => {
                       <b>Cloud Storage</b>
                       <div className="bar">
                         <h6>Total Storage</h6>
-                        <Progress
-                          percent={sub?.maxlimit}
-                          strokeColor={{
-                            "0%": "#108ee9",
-                            "100%": "#87d068",
-                          }}
-                        />
-                        <p>{sub?.maxlimit} MB</p>
+                        <Progress percent={100} />
+                        <p>{s?.maxlimit} KB</p>
                       </div>
 
                       <div className="bar">
                         <h6>Available Storage</h6>
-                        <Progress
-                          percent={sub?.existlimit}
-                          strokeColor={{
-                            "0%": "#108ee9",
-                            "100%": "#87d068",
-                          }}
-                        />
-                        <p>{sub?.existlimit} MB</p>
+                        <Progress percent={percent} />
+                        <p>{s?.existlimit} MB</p>
                       </div>
                     </div>
                   </div>

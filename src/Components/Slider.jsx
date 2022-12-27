@@ -23,7 +23,7 @@ const Slider = ({ feedback }) => {
       >
         {feedback?.map((f) => (
           <div key={f._id}>
-            <img src={f.avtar} className="av" />
+            <img src={f.avtar} className="av" style={{ objectFit: "cover" }} />
             <h5>{f.name}</h5>
             <h6>
               {f.comment?.substring(150, [0])}
