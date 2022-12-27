@@ -20,14 +20,14 @@ const Login = () => {
   const Navigate = useNavigate();
 
   useEffect(() => {
-    const unsubscribe = () => {
-      if (isvalid) {
-        Navigate("/");
-        toast.error("Already Login");
-      }
-    };
-    return () => unsubscribe();
-  }, [Navigate]);
+    // const unsubscribe = () => {
+    if (isvalid) {
+      Navigate("/");
+      toast.error("Already Login");
+    }
+    // };
+    // return () => unsubscribe();
+  }, [Navigate, isvalid]);
 
   const handleSubmit = () => {
     setLoading(true);

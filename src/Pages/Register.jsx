@@ -14,7 +14,7 @@ const Register = () => {
       Navigate("/");
       toast.error("Already Login");
     }
-  }, [Navigate]);
+  }, [Navigate, isvalid]);
 
   return <RegisterUserForm />;
 };
