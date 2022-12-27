@@ -25,7 +25,7 @@ const App = () => {
     };
     //cleanup
     return () => unsubscribe();
-  }, [dispatch]);
+  }, [dispatch,token]);
 
   return (
     <div>
