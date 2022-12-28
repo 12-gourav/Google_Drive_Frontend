@@ -22,15 +22,12 @@ const App = () => {
         console.log(err);
       });
     // };
-    //cleanup
-<<<<<<< HEAD
-    // return () => unsubscribe();
-  }, [dispatch, token]);
-=======
-    return () => unsubscribe();
-  }, [dispatch,token]);
->>>>>>> e3547a4646b6f90ca4a5e9e1eb979986b99cd923
+//     cleanup
 
+//     return () => unsubscribe();
+  }, [dispatch]);
+
+ 
   return (
     <div>
       <Home />
